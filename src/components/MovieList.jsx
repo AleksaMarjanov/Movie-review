@@ -16,7 +16,7 @@ const MovieList = [
     {
         id: 3,
         title: "The Silence of the Lambs",
-        director: ' Jonathan Demme',
+        director: 'Jonathan Demme',
         imgURL: 'https://m.media-amazon.com/images/M/MV5BNjNhZTk0ZmEtNjJhMi00YzFlLWE1MmEtYzM1M2ZmMGMwMTU4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UY209_CR1,0,140,209_AL_.jpg',
         releaseDate: 1991,
     }

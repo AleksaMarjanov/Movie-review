@@ -5,7 +5,7 @@ import Rating from '@mui/material/Rating';
 const Stars = (props) => {
   return (
      <Box sx={{'& > legend': { mt: 3 },}}>
-        <h6>{props.user} gave this</h6>
+        <h6>{props.user}</h6>
         <Rating name="read-only" value={props.rating} readOnly />
     </Box>
   )

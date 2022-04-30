@@ -1,5 +1,9 @@
 import MovieList from './components/MovieList';
 import Movie from './components/Movie';
+import Review from './components/Review';
+import ReviewList from './components/ReviewList';
+import ReviewForm from './components/ReviewForm'
+import Stars from './components/Stars';
 
 
 
@@ -22,6 +26,10 @@ function App() {
     <div>
      <h1>Movie List</h1>
       {MovieList.map(createMovie)}
+      <ReviewForm />
+      <Stars />
+      <ReviewList />
+      <Review />
     </div>
   );
 }
