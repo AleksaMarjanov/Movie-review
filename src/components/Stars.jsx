@@ -6,7 +6,7 @@ const Stars = (props) => {
   return (
      <Box sx={{'& > legend': { mt: 3 },}}>
         <h6>{props.username}</h6>
-        <Rating name="read-only" value={props.rating} readOnly />
+        {/* <Rating name="read-only" value={props.rating} readOnly /> */}
     </Box>
   )
 }

@@ -3,18 +3,20 @@ import Box from '@mui/material/Box';
 import Rating from '@mui/material/Rating';
 
 const ReviewForm = (props) => {
-
-  const [newRating, setRating] = useState({
-      username: "",
-      content: "",
-      rating: "",
-  });
   
+  
+  // new newReview that will be created
+  const [newReview, setReview] = useState({
+      username: "",
+      review: "",
+      rating: ""
+  });
+ 
 
   function handleChange(event) {
-      const {name, value} =event.target;
+      const {name, value} = event.target;
 
-      setRating(prevRating => {
+      setReview(prevRating => {
         return {
           ...prevRating,
           [name] : value
@@ -23,25 +25,44 @@ const ReviewForm = (props) => {
   }
 
   function submitRating(event) {
-    props.onAdd(newRating)
+    props.onAdd(newReview)
     event.preventDefault();
-    setRating({
+    setReview({
       username: "",
-      content: "",
-      rating: ''
+      review: "",
     });
+    console.log('Rating submitted')
   }
 
   return (
     <>
     <h6>Add your review:</h6>
     <Box sx={{'& > legend': { mt: 2 },}}>
-    <Rating value={newRating.rating.toParseInt} name="simple-controlled" onChange={handleChange}/>
+    <Rating  name="simple-controlled" 
+    onChange={handleChange} 
+    // need this value later on to keep track of this data
+    // value={newReview.rating.toParseInt}
+    />
     </Box>
-    <label>User Name</label>
-      <input  type='text' className='form-control' value={newRating.username} onChange={handleChange} placeholder='Username'/>
-      <label>Review</label>
-      <textarea  className='form-control' rows='3' value={newRating.content} onChange={handleChange} placeholder='Review'/>
+    <label>User Name:</label>
+      <input 
+      type='text' 
+      name='username'
+      className='form-control'  
+      onChange={handleChange} 
+      placeholder='Username'
+      value={newReview.username}
+      />
+      <label>Review :</label>
+      <textarea  
+      name='review'
+      className='form-control' 
+      rows='3'  
+      onChange={handleChange} 
+      placeholder='Tell me what do you think about the movie?'
+      value={newReview.review}
+      />
+      
       <br/>
       <button className="btn btn-primary" id='button' type="button" onClick={submitRating}>Submit</button>
     </>

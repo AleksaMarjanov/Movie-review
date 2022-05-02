@@ -1,8 +1,8 @@
-import React, {useState} from 'react';
+import React from 'react';
 import MovieList from './components/MovieList';
 import Movie from './components/Movie';
-import ReviewForm from './components/ReviewForm'
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 
@@ -16,7 +16,7 @@ function App() {
       name={movie.name}
       img={movie.imgURL}
       director={movie.director}
-      releaseDate={movie.releaseDate}
+      releaseDate={movie.releasedate}
       />
   };
 

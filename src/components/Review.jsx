@@ -1,8 +1,13 @@
 import React from 'react'
+import Stars from './Stars'
 
-const Review = () => {
+const Review = (props) => {
   return (
-    <div>Review</div>
+    <div>
+    <Stars user={props.review.username} rating={props.review.rating}/>
+    <div>{props.review.review}</div>
+    <br/>
+  </div>
   )
 }
 
