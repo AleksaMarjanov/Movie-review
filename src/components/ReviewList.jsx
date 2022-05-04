@@ -1,17 +1,19 @@
-import React from 'react'
-import Review from './Review';
+import React from "react";
+import Review from "./Review";
 
-
-const ReviewList = (props) => {
+const ReviewList = ({ username, review, rating }) => {
   return (
     <>
-      <h5>User Reviews:</h5>
-        <br/>
-        <div  className='overflow-auto' id='reviewBox'>
-        {/* {props.reviews.map( review => <Review review={review} key={review.id} /> )} */}
-        </div> 
-      </>
-  )
-}
+      <div className="overflow-auto" id="reviewBox">
+        <p>Rating</p>
+        <Review rating={rating} />
+        <p>Username</p>
+        <p>{username}</p>
+        <p>Content</p>
+        <p>{review}</p>
+      </div>
+    </>
+  );
+};
 
-export default ReviewList
+export default ReviewList;

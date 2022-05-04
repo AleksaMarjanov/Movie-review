@@ -1,14 +1,14 @@
-import React from 'react'
-import Stars from './Stars'
+import React from "react";
+import Stars from "./Stars";
 
-const Review = (props) => {
+const Review = ({ username, rating, review }) => {
   return (
     <div>
-    <Stars user={props.review.username} rating={props.review.rating}/>
-    <div>{props.review.review}</div>
-    <br/>
-  </div>
-  )
-}
+      <Stars username={username} rating={rating} />
+      <div>{review}</div>
+      <br />
+    </div>
+  );
+};
 
-export default Review
+export default Review;
