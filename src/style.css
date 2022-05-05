@@ -1,0 +1,54 @@
+html {
+  font-size: 110.5%;
+}
+
+body {
+  margin: 0;
+  font: 300 'Helvetica Neue', 'sans-serif';
+    background: #022c43;
+    /* overflow: hidden; */
+    display: block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#poster {
+  max-width: 100%;
+  height: auto;
+  border-radius: 30px;
+}
+
+#movieContainer {
+  border: solid;
+  border-radius: 10px;
+  padding: 1em;
+  margin: 1em;
+  background-color:#2e6985;
+  color:#E1FCFD;
+}
+
+#reviewBox {
+  max-height: 30rem;
+}
+
+.btn {
+  border-radius: 10px;
+  border: none;
+}
+
+.btn:hover {
+  transform: translateY(-2px)
+}
+
+input,
+text {
+  color: black;
+  font-weight: 400;
+}
+

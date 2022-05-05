@@ -32,7 +32,7 @@ const ReviewForm = ({ onAdd }) => {
 
   return (
     <>
-      <h6>Add your review:</h6>
+      <h6 className="mt-5">Add your review:</h6>
       <Box sx={{ "& > legend": { mt: 2 } }}>
         <Rating
           name="stars"
@@ -41,16 +41,16 @@ const ReviewForm = ({ onAdd }) => {
           // value={newReview.rating.toParseInt}
         />
       </Box>
-      <label>User Name:</label>
+      <label className="p-1">Name :</label>
       <input
         type="text"
         name="username"
         className="form-control"
         onChange={handleChange}
-        placeholder="Username"
+        placeholder="Enter your name"
         value={newReview.username}
       />
-      <label>Review :</label>
+      <label className="p-1">Review :</label>
       <textarea
         name="review"
         className="form-control"

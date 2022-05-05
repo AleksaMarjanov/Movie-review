@@ -5,12 +5,10 @@ const ReviewList = ({ username, review, rating }) => {
   return (
     <>
       <div className="overflow-auto" id="reviewBox">
-        <p>Rating</p>
         <Review rating={rating} />
-        <p>Username</p>
+        <p>Your rating is: {rating} of 5</p>
         <p>{username}</p>
-        <p>Content</p>
-        <p>{review}</p>
+        <p>"{review}"</p>
       </div>
     </>
   );

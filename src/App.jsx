@@ -2,6 +2,7 @@ import React from "react";
 import MovieList from "./components/MovieList";
 import Movie from "./components/Movie";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./style.css";
 
 function App() {
   function createMovie(movie) {
@@ -12,17 +13,12 @@ function App() {
         title={movie.title}
         img={movie.imgURL}
         director={movie.director}
-        releaseDate={movie.releasedate}
+        releasedate={movie.releaseDate}
       />
     );
   }
 
-  return (
-    <>
-      <h1>Movie List</h1>
-      {MovieList.map(createMovie)}
-    </>
-  );
+  return <div className="posterBG">{MovieList.map(createMovie)}</div>;
 }
 
 export default App;

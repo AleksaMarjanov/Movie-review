@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ReviewForm from "./ReviewForm";
 import ReviewList from "./ReviewList";
 
-const Movie = ({ title, img, director, releaseDate }) => {
+const Movie = ({ title, img, director, releasedate }) => {
   // for the array or reviews
   const [reviews, setNewReview] = useState([]);
 
@@ -18,14 +18,15 @@ const Movie = ({ title, img, director, releaseDate }) => {
       <div className="flex-container" id="movieContainer">
         <div className="row">
           <div className="col-sm-4">
-            <img src={img} alt={`${title} Movie`} />
+            <img src={img} alt={`${title} Movie`} id="poster" />
           </div>
           <div className="col-sm-8">
             <div className="row">
               <h1>{title}</h1>
               <div className="col-sm-5">
                 <h5>{director}</h5>
-                <h6>{releaseDate}</h6>
+                <h6>{releasedate}</h6>
+
                 <ReviewForm onAdd={addReview} />
               </div>
               <div className="col-sm-7">
