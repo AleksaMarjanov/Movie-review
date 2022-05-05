@@ -14,6 +14,7 @@ function App() {
         img={movie.imgURL}
         director={movie.director}
         releasedate={movie.releaseDate}
+        story={movie.story}
       />
     );
   }

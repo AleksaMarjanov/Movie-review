@@ -33,7 +33,7 @@ code {
 }
 
 #reviewBox {
-  text-align: center;
+  margin-left: 30px;
   align-content: center;
   justify-content: center;
   
@@ -54,3 +54,6 @@ text {
   font-weight: 400;
 }
 
+.story {
+  font-size: 15px;
+}
