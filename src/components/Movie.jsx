@@ -30,7 +30,6 @@ const Movie = ({ title, img, director, releasedate, story }) => {
                 <ReviewForm onAdd={addReview} />
               </div>
               <div className="col-sm-7">
-                {/* <h5>User Reviews:</h5> */}
                 {reviews.map((reviewItem, index) => {
                   return (
                     <ReviewList

@@ -7,7 +7,6 @@ const ReviewForm = ({ onAdd }) => {
   const [newReview, setNewReview] = useState({
     username: "",
     review: "",
-    // rating: "",
   });
 
   function handleChange(event) {
@@ -34,12 +33,7 @@ const ReviewForm = ({ onAdd }) => {
     <>
       <h6 className="mt-5">Add your review:</h6>
       <Box sx={{ "& > legend": { mt: 2 } }}>
-        <Rating
-          name="stars"
-          onChange={handleChange}
-          // need this value later on to keep track of this data
-          // value={newReview.rating.toParseInt}
-        />
+        <Rating name="stars" onChange={handleChange} />
       </Box>
       <label className="p-1">Name :</label>
       <input
