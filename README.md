@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # <img src="https://i.ibb.co/6tKyzRG/2022-05-07-07-39-47-Movie-Reviews.png" width="800px">
 
-# <a href="https://cheerful-gingersnap-4218ad.netlify.app/" target="_blank" >Live Demo</a>
+# <a href="https://aleksa-review-movies.netlify.app/" target="_blank" >Live Demo</a>
 
 ## Available Scripts
 
