@@ -9,6 +9,8 @@ const ReviewForm = ({ onAdd }) => {
     review: "",
   });
 
+  const { username, review } = newReview;
+
   function handleChange(event) {
     const { name, value } = event.target;
 
@@ -42,7 +44,7 @@ const ReviewForm = ({ onAdd }) => {
         className="form-control"
         onChange={handleChange}
         placeholder="Enter your name"
-        value={newReview.username}
+        value={username}
       />
       <label className="p-1">Review :</label>
       <textarea
@@ -51,7 +53,7 @@ const ReviewForm = ({ onAdd }) => {
         rows="3"
         onChange={handleChange}
         placeholder="Tell me what do you think about the movie?"
-        value={newReview.review}
+        value={review}
       />
 
       <br />
